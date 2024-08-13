@@ -4,11 +4,13 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react'
 
-import "normalize.css";
-import "./styles/globals.css";
-import "./styles/tailwind.css";
+import 'normalize.css'
+import './styles/globals.css'
+import './styles/tailwind.css'
+
+import ChannelIO from './components/ChannelIO'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -33,11 +35,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <ChannelIO />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }
