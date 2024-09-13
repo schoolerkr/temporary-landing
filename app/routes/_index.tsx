@@ -68,36 +68,16 @@ export default function Index() {
 
                 <span>
                   <a
-                    href="mailto:minsu.kim@hanarin.uk"
+                    href="mailto:minsu.kim@lunaiz.com"
                     className="text-blue-400 underline"
                     onClick={(e) => {
                       e.preventDefault()
                       alert(
-                        'minsu.kim@hanarin.uk로 메일을 보내주시면 감사하겠습니다.',
+                        'minsu.kim@lunaiz.com로 메일을 보내주시면 감사하겠습니다.',
                       )
                     }}
                   >
-                    이메일로 문의 (추천)
-                  </a>
-                  {' | '}
-                  <a
-                    href="tel:07041552227"
-                    className="text-blue-400 underline"
-                    onClick={(e) => {
-                      e.preventDefault()
-
-                      if (
-                        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-                      ) {
-                        window.location.href = 'tel:07041552227'
-                      } else {
-                        alert(
-                          '070-4155-2227로 전화를 걸어주시면 감사하겠습니다.',
-                        )
-                      }
-                    }}
-                  >
-                    전화로 문의
+                    이메일로 문의
                   </a>
                 </span>
               </span>
